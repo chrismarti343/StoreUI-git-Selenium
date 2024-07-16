@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-16T14:20:34 COT" name="All Test Suite" finished-at="2024-07-16T14:21:09 COT" duration-ms="35216">
+    <groups>
+    </groups>
+    <test started-at="2024-07-16T14:20:34 COT" name="C:/Users/cmartinez02/Downloads/BancodePichinchaTest 1/BancodePichinchaTest" finished-at="2024-07-16T14:21:09 COT" duration-ms="35216">
+      <class name="test.Addtwoproducts">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.Addtwoproducts@7642df8f]" started-at="2024-07-16T14:20:34 COT" name="beforeMethod" finished-at="2024-07-16T14:20:36 COT" duration-ms="1880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testAddTwoProducts()[pri:0, instance:test.Addtwoproducts@7642df8f]" started-at="2024-07-16T14:20:36 COT" name="testAddTwoProducts" finished-at="2024-07-16T14:21:08 COT" duration-ms="32728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTwoProducts -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.Addtwoproducts@7642df8f]" started-at="2024-07-16T14:21:08 COT" name="tearDown" finished-at="2024-07-16T14:21:09 COT" duration-ms="582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddTwoProducts status=SUCCESS method=Addtwoproducts.testAddTwoProducts()[pri:0, instance:test.Addtwoproducts@7642df8f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Addtwoproducts -->
+    </test> <!-- C:/Users/cmartinez02/Downloads/BancodePichinchaTest 1/BancodePichinchaTest -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

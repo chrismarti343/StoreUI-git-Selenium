@@ -1,0 +1,35 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+jobs:
+- job: Install_Packages
+  pool:
+    vmImage: windows-latest  # Adjust VM image if needed
+
+  steps:
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: '17'
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'PreInstalled'
+  
+  - script: |  # Download ChromeDriver version 125.0.6422.142
+      curl -L https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.141/win64/chromedriver-win64.zip -o chromedriver.zip
+      unzip chromedriver.zip
+    displayName: Set ChromeDriver
+
+  - script: |  # Set ChromeDriver path (replace with actual download path)
+      echo "##vso[task.setvariable variable=ChromeDriverPath;value=C:\agent\chromedrivers\chromedriver.exe]"
+    displayName: Set ChromeDriver path
+  
+  - task: Maven@4  # Task to run tests
+    displayName: Running tests
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'test'  # Assuming features.TestRunner executes your tests
+      publishJUnitResults: true  # Publish results in this job
+
+
+
