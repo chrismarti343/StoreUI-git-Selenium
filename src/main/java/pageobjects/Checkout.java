@@ -143,6 +143,4 @@ public class Checkout extends Base {
         Assert.assertEquals(text,textValue);
         test.log(Status.PASS, "Verificar texto: "+text);
     }
-
-
 }

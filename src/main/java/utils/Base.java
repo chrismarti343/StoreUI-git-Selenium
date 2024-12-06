@@ -13,7 +13,7 @@ import java.util.List;
 public class Base {
 
     protected static ExtentTest test;
-    private final WebDriver dv;
+    protected final WebDriver dv;
     public Base(WebDriver dv) {
         this.dv = dv;
     }
@@ -29,15 +29,19 @@ public class Base {
 //    }
 
     public void visit(String url){
+
         dv.get(url);
     }
     public WebElement findElement(By locator){
+
         return dv.findElement(locator);
     }
     public void type (String inputText, By locator) {
+
         dv.findElement(locator).sendKeys(inputText);
     }
     public void click(By locator){
+
         dv.findElement(locator).click();
     }
     public void wait(By locator){
@@ -45,10 +49,12 @@ public class Base {
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
     public void isDisplay(By locator){
+
         dv.findElement(locator).isDisplayed();
     }
 
     public List<WebElement> findElements(By locator) {
+
         return dv.findElements(locator);
     }
 }
