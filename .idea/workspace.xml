@@ -4,263 +4,139 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd1c5c90-4f95-48a4-9c55-cad1f024cee2" name="Changes" comment="">
+    <list default="true" id="1c8fa33a-5181-4fc0-a5b4-3aa75fcb91db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Checkout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ViewCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/ViewCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/Addtwoproducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Addtwoproducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExtentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/Checkout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/ViewCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/Addtwoproducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/Addtwoproducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/ExtentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/ExtentFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_cmartinez02_Downloads_BancodePichinchaTest 1_BancodePichinchaTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_cmartinez02_Downloads_BancodePichinchaTest 1_BancodePichinchaTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_cmartinez02_Downloads_BancodePichinchaTest 1_BancodePichinchaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_cmartinez02_Downloads_BancodePichinchaTest 1_BancodePichinchaTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-3.6.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-test.Addtwoproducts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-test.Addtwoproducts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-not-run.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2gmXOfPEE6CxwJa454fDmBnb46J" />
+  <component name="ProjectId" id="2os0kdWbUlFQetA8WqiXXQGnbk4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cmartinez02/AutomationTest/ProsFlow&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Addtwoproducts (1).executor": "Run",
+    "TestNG.Addtwoproducts.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chris/Documents/Projects/AzureProjects/StoreUI",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cmartinez02\Downloads\BancodePichinchaTest 1\BancodePichinchaTest\src\main\java" />
+      <recent name="C:\Users\chris\Documents\Projects\AzureProjects\StoreUI\report" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
-      <option name="appName" />
-      <option name="appServicePlanName" />
-      <option name="appServicePlanResourceGroup" />
-      <option name="appSettingsKey" value="ac8f7e20-b8ec-42dc-934a-df9fc50e67cd" />
-      <option name="artifact" />
-      <option name="debugOptions" />
-      <option name="deployment" />
-      <option name="deploymentStagingDirectoryPath" />
-      <option name="funcPath" />
-      <option name="functionHostArguments" />
-      <option name="hostJsonPath" />
-      <option name="insightsName" />
-      <option name="instrumentationKey" />
-      <option name="javaVersion" />
-      <option name="localSettingsJsonPath" />
-      <option name="moduleName" />
-      <option name="os" />
-      <option name="pricingTier" />
-      <option name="providerMap">
-        <map />
-      </option>
-      <option name="region" />
-      <option name="resourceGroup" />
-      <option name="stagingFolder" />
-      <option name="subscription" />
+    <configuration name="Addtwoproducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BancodePichinchaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Addtwoproducts" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-4caba194b151-9f4ef98c" />
-        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
-      </set>
-    </attachedChunks>
+    <configuration name="Addtwoproducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BancodePichinchaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Addtwoproducts" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Addtwoproducts" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd1c5c90-4f95-48a4-9c55-cad1f024cee2" name="Changes" comment="" />
-      <created>1716303695772</created>
+      <changelist id="1c8fa33a-5181-4fc0-a5b4-3aa75fcb91db" name="Changes" comment="" />
+      <created>1731643121212</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716303695772</updated>
+      <updated>1731643121212</updated>
     </task>
-    <task id="LOCAL-00001" summary="changes">
-      <option name="closed" value="true" />
-      <created>1718038548361</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1718038548361</updated>
-    </task>
-    <task id="LOCAL-00002" summary="changesnnn">
-      <option name="closed" value="true" />
-      <created>1718038700228</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1718038700228</updated>
-    </task>
-    <task id="LOCAL-00003" summary="change xpath names">
-      <option name="closed" value="true" />
-      <created>1718039273737</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1718039273737</updated>
-    </task>
-    <task id="LOCAL-00004" summary="changes to go through with no error">
-      <option name="closed" value="true" />
-      <created>1718041915940</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1718041915940</updated>
-    </task>
-    <task id="LOCAL-00005" summary="max window">
-      <option name="closed" value="true" />
-      <created>1718042570330</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1718042570330</updated>
-    </task>
-    <task id="LOCAL-00006" summary="max window">
-      <option name="closed" value="true" />
-      <created>1718042806228</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1718042806228</updated>
-    </task>
-    <task id="LOCAL-00007" summary="yaml config">
-      <option name="closed" value="true" />
-      <created>1718043082296</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1718043082296</updated>
-    </task>
-    <task id="LOCAL-00008" summary="new functions">
-      <option name="closed" value="true" />
-      <created>1718060195568</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1718060195568</updated>
-    </task>
-    <task id="LOCAL-00009" summary="new functions">
-      <option name="closed" value="true" />
-      <created>1718060333517</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1718060333517</updated>
-    </task>
-    <task id="LOCAL-00010" summary="using static to reduce code lines">
-      <option name="closed" value="true" />
-      <created>1718405185272</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1718405185272</updated>
-    </task>
-    <task id="LOCAL-00011" summary="using static to reduce code lines">
-      <option name="closed" value="true" />
-      <created>1718405534531</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1718405534531</updated>
-    </task>
-    <task id="LOCAL-00012" summary="using new extentReport version and findby">
-      <option name="closed" value="true" />
-      <created>1718744766812</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1718744766812</updated>
-    </task>
-    <task id="LOCAL-00013" summary="forgot to uncommend">
-      <option name="closed" value="true" />
-      <created>1718744823247</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1718744823247</updated>
-    </task>
-    <task id="LOCAL-00014" summary="all last commits">
-      <option name="closed" value="true" />
-      <created>1720131469320</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1720131469320</updated>
-    </task>
-    <task id="LOCAL-00015" summary="for loop and other">
-      <option name="closed" value="true" />
-      <created>1721158633023</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1721158633024</updated>
-    </task>
-    <task id="LOCAL-00016" summary="for loop and other">
-      <option name="closed" value="true" />
-      <created>1721158963678</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1721158963678</updated>
-    </task>
-    <task id="LOCAL-00017" summary="for loop and other">
-      <option name="closed" value="true" />
-      <created>1721159713527</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1721159713527</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="changes" />
-    <MESSAGE value="changesnnn" />
-    <MESSAGE value="change xpath names" />
-    <MESSAGE value="changes to go through with no error" />
-    <MESSAGE value="max window" />
-    <MESSAGE value="yaml config" />
-    <MESSAGE value="new functions" />
-    <MESSAGE value="using static to reduce code lines" />
-    <MESSAGE value="using new extentReport version and findby" />
-    <MESSAGE value="forgot to uncommend" />
-    <MESSAGE value="all last commits" />
-    <MESSAGE value="for loop and other" />
-    <option name="LAST_COMMIT_MESSAGE" value="for loop and other" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:javax.enterprise:cdi-api" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
 </project>

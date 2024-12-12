@@ -1,6 +1,6 @@
 test\Addtwoproducts.class
-test\Base.class
+pageobjects\ViewCart.class
+utils\Base.class
 utils\ExtentFactory.class
-pages\Checkout.class
-pages\ViewCart.class
-pages\Home.class
+pageobjects\Home.class
+pageobjects\Checkout.class
