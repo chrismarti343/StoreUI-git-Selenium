@@ -1,4 +1,4 @@
-package pages;
+package pageobjects;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -6,18 +6,13 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import test.Base;
+import utils.Base;
 
 
-import java.time.Duration;
 import java.util.List;
 
 public class Checkout extends Base {
-    public Checkout (WebDriver dv, ExtentTest test) {
-        super(dv);
-        Base.test = test;
-    }
+
     By checkout = By.xpath("//a[@class='btn btn-primary']");
     By guest = By.xpath("//input[@value='guest']");
     By next = By.xpath("//input[@id='button-account']");
@@ -32,64 +27,70 @@ public class Checkout extends Base {
     By selectAny = By.xpath("//option[@value='62']");
     By clickZone = By.id("input-payment-zone");
     By selectZone = By.xpath("//option[@value='997']");
-    By continuarBtn = By.id("button-guest");
+    By nextBtn = By.id("button-guest");
     By acceptCond = By.xpath("//input[@name='agree']");
     By nextPayment = By.id("button-payment-method");
     By confirmOrder = By.id("button-confirm");
 
-    public void clickonCheckout() throws InterruptedException {
+    public Checkout (WebDriver dv, ExtentTest test) {
+        //Constructor
+        super(dv);
+        Base.test = test;
+    }
+
+    public void clickonCheckout() {
         click(checkout);
-        Thread.sleep(1000);
+        implicitWait(1);
         test.log(Status.PASS, "Click en Chechout ");
     }
-    public void clickonGuest() throws InterruptedException {
+    public void clickonGuest() {
         click(guest);
-        Thread.sleep(1000);
+        implicitWait(1);
         test.log(Status.PASS, "Click en Guest ");
     }
-    public void clickonContinuar() throws InterruptedException {
+    public void clickonContinuar() {
         click(next);
-        Thread.sleep(3000);
-        test.log(Status.PASS, "Click en Continuar ");
+        implicitWait(1);
+        test.log(Status.PASS, "Click on Next ");
     }
-    public void setName(String name) throws InterruptedException {
+    public void setName(String name) {
         type(name,nameKey);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar Nombre ");
+        implicitWait(1);
+        test.log(Status.PASS, "Add name ");
     }
-    public void setLastName(String lastName) throws InterruptedException {
+    public void setLastName(String lastName) {
         type(lastName,lastNameGiven);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar Nombre ");
+        implicitWait(1);
+        test.log(Status.PASS, "Add lastname");
     }
-    public void setEmail(String email) throws InterruptedException {
+    public void setEmail(String email) {
         type(email,emailLocator);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar email ");
+        implicitWait(1);
+        test.log(Status.PASS, "Add email");
     }
-    public void setPhone(String phone) throws InterruptedException {
+    public void setPhone(String phone) {
         type(phone,phoneLocator);
-        Thread.sleep(1000);
-        test.log(Status.PASS,"Agregar telefono ");
+        implicitWait(1);
+        test.log(Status.PASS,"Add phone");
     }
-    public void setAddress(String address) throws InterruptedException {
+    public void setAddress(String address) {
         type(address,addressLocator);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar direccion ");
+        implicitWait(1);
+        test.log(Status.PASS, "Add address ");
     }
-    public void setCity(String city) throws InterruptedException {
+    public void setCity(String city) {
         type(city,cityLocator);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar ciudad ");
+        implicitWait(1);
+        test.log(Status.PASS, "Add city ");
     }
-    public void setPost(String postCode) throws InterruptedException {
+    public void setPost(String postCode) {
         type(postCode,postLocator);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar codigo postal");
+        implicitWait(1);
+        test.log(Status.PASS, "Add Zip Code");
     }
-    public void setCountry() throws InterruptedException {
+    public void setCountry() {
         click(clickCountry);
-        Thread.sleep(1000);
+        implicitWait(1);
         WebElement dropdownList = findElement(clickCountry);
         List<WebElement> listItems = dropdownList.findElements(By.tagName("option"));
         for (int i = 1; i < listItems.size(); i++) {
@@ -98,49 +99,49 @@ public class Checkout extends Base {
             System.out.println("This is the list "+ i +" Country: " + itemText);
         }
         click(selectAny);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar pais");
+        implicitWait(1);
+        test.log(Status.PASS, "Add country");
     }
 
-    public void setState() throws InterruptedException {
+    public void setState() {
         click(clickZone);
-        Thread.sleep(1000);
+        implicitWait(1);
         click(selectZone);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Agregar estado");
+        implicitWait(1);
+        test.log(Status.PASS, "Add state");
     }
 
-    public void clickonContinuarCheckout() throws InterruptedException {
-        click(continuarBtn);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Click en Continuar");
+    public void clickonContinuarCheckout() {
+        click(nextBtn);
+        implicitWait(1);
+        test.log(Status.PASS, "Click on Next");
     }
 
-    public void acceptConditions() throws InterruptedException{
+    public void acceptConditions() {
         click(acceptCond);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Click en Aceptar Condiciones");
+        implicitWait(1);
+        test.log(Status.PASS, "Click on Accept conditions");
     }
 
-    public void clickonNextStepPayment() throws InterruptedException{
+    public void clickonNextStepPayment() {
         click(nextPayment);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Click en Continuar siguiente");
+        implicitWait(1);
+        test.log(Status.PASS, "Click on Next");
     }
 
-    public void confirmOrder() throws InterruptedException{
+    public void confirmOrder() {
         click(confirmOrder);
-        Thread.sleep(1000);
-        test.log(Status.PASS, "Click en confirmar orden");
+        implicitWait(1);
+        test.log(Status.PASS, "Click on confirm order");
     }
 
-    public void verify(String text) throws InterruptedException {
-        By textLocator = By.xpath("//h1[normalize-space()='"+text+"']");
+    public void verify() {
+        String expectedOrderText = "Your order has been placed!";
+        By textLocator = By.xpath("//h1[normalize-space()='"+expectedOrderText+"']");
         wait(textLocator);
-        Thread.sleep(1000);
         WebElement errorElement1 = findElement(textLocator);
-        String textValue = errorElement1.getText();
-        Assert.assertEquals(text,textValue);
-        test.log(Status.PASS, "Verificar texto: "+text);
+        String actualTextValue = errorElement1.getText();
+        Assert.assertEquals(actualTextValue,expectedOrderText);
+        test.log(Status.PASS, "Verify text: "+expectedOrderText);
     }
 }
