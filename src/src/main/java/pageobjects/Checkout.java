@@ -6,12 +6,12 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utils.BasePage;
+import utils.Base;
 
 
 import java.util.List;
 
-public class Checkout extends BasePage {
+public class Checkout extends Base {
 
     By checkout = By.xpath("//a[@class='btn btn-primary']");
     By guest = By.xpath("//input[@value='guest']");
@@ -35,7 +35,7 @@ public class Checkout extends BasePage {
     public Checkout (WebDriver dv, ExtentTest test) {
         //Constructor
         super(dv);
-        BasePage.test = test;
+        Base.test = test;
     }
 
     public void clickonCheckout() {
@@ -80,17 +80,15 @@ public class Checkout extends BasePage {
     }
     public void setCity(String city) {
         type(city,cityLocator);
-        implicitWait(1);
         test.log(Status.PASS, "Add city ");
     }
     public void setPost(String postCode) {
         type(postCode,postLocator);
-        implicitWait(1);
         test.log(Status.PASS, "Add Zip Code");
     }
     public void setCountry() {
+        wait(clickCountry);
         click(clickCountry);
-        implicitWait(1);
         WebElement dropdownList = findElement(clickCountry);
         List<WebElement> listItems = dropdownList.findElements(By.tagName("option"));
         for (int i = 1; i < listItems.size(); i++) {
@@ -99,28 +97,24 @@ public class Checkout extends BasePage {
             System.out.println("This is the list "+ i +" Country: " + itemText);
         }
         click(selectAny);
-        implicitWait(1);
         test.log(Status.PASS, "Add country");
     }
 
     public void setState() {
         click(clickZone);
-        implicitWait(1);
         click(selectZone);
-        implicitWait(1);
         test.log(Status.PASS, "Add state");
     }
 
-    public void clickonNextCheckout() {
+    public void clickonContinuarCheckout() {
+        wait(nextBtn);
         click(nextBtn);
-        implicitWait(1);
         test.log(Status.PASS, "Click on Next");
     }
 
     public void acceptConditions() {
         wait(acceptCond);
         click(acceptCond);
-        implicitWait(1);
         test.log(Status.PASS, "Click on Accept conditions");
     }
 

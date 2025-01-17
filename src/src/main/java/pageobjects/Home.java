@@ -6,12 +6,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import utils.BasePage;
+import utils.Base;
 
 import java.util.List;
 
 
-public class Home extends BasePage {
+public class Home extends Base {
 
     By addCart = By.xpath("//span[contains(text(),'Add to Cart')][1]");
     By macImage = By.xpath("//img[@title='MacBook']");
@@ -21,11 +21,10 @@ public class Home extends BasePage {
     public Home (WebDriver dv, ExtentTest test) {
         //Constructor
         super(dv);
-        BasePage.test = test;
+        Base.test = test;
     }
     public void gotoHome() {
         visit("https://opencart.abstracta.us/index.php?route=common/home");
-        implicitWait(1);
         test.log(Status.PASS, "Ir a Home page");
     }
     public void clickFirstProduct() {
@@ -33,8 +32,13 @@ public class Home extends BasePage {
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         wait(addCart);
         click(addCart);
-        implicitWait(1);
         test.log(Status.PASS, "Click on the first product: Macbook ");
+    }
+
+    public void scrollToElement() {
+        WebElement element = findElement(macImage);
+        implicitWait(5);
+        ((JavascriptExecutor) dv).executeScript("arguments[0].scrollIntoView()", element);
     }
 
     public void macIsDisplay() {
@@ -47,7 +51,6 @@ public class Home extends BasePage {
         String actualTitle = dv.getTitle();
         String expectedTitle = "Your Store";
         Assert.assertEquals(actualTitle,expectedTitle);
-        implicitWait(1);
         test.log(Status.PASS, "Verify title page is present");
     }
     public void printOut() {
@@ -66,16 +69,10 @@ public class Home extends BasePage {
 
         boolean isDisplayed = isDisplay(cartItem);
 
-        if (!isDisplayed) {
-            System.out.println("Cart Item is not displayed ");
-        }else {
+        if (isDisplayed) {
             System.out.println("Cart Item is displayed ");
+        }else {
+            System.out.println("Cart Item is not displayed ");
         }
-    }
-
-    public void scrollToElement() {
-        WebElement element = findElement(macImage);
-        implicitWait(5);
-        ((JavascriptExecutor) dv).executeScript("arguments[0].scrollIntoView()", element);
     }
 }
