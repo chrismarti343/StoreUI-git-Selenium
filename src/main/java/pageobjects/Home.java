@@ -13,6 +13,8 @@ import java.util.List;
 
 public class Home extends BasePage {
 
+    private static final String HOME_URL = "https://opencart.abstracta.us/index.php?route=common/home";
+
     By addCart = By.xpath("//span[contains(text(),'Add to Cart')][1]");
     By macImage = By.xpath("//img[@title='MacBook']");
     By title = By.xpath("//a[normalize-space()='Laptops & Notebooks']");
@@ -24,16 +26,15 @@ public class Home extends BasePage {
         BasePage.test = test;
     }
     public void gotoHome() {
-        visit("https://opencart.abstracta.us/index.php?route=common/home");
-        implicitWait(1);
+        visit(HOME_URL);
+        waitForPageLoad();
         test.log(Status.PASS, "Ir a Home page");
     }
     public void clickFirstProduct() {
-        JavascriptExecutor js = (JavascriptExecutor) dv;
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        scrollToBottom();
         wait(addCart);
         click(addCart);
-        implicitWait(1);
+        waitForPageLoad();
         test.log(Status.PASS, "Click on the first product: Macbook ");
     }
 
@@ -55,7 +56,7 @@ public class Home extends BasePage {
         click(title);
         WebElement listLaptop = findElement(title);
         List<WebElement> listItems = listLaptop.findElements(By.tagName("li"));
-        
+
         for (WebElement item : listItems) {
             String itemText = item.getText();
             System.out.println("List of countries: "+itemText);
@@ -77,5 +78,9 @@ public class Home extends BasePage {
         WebElement element = findElement(macImage);
         implicitWait(5);
         ((JavascriptExecutor) dv).executeScript("arguments[0].scrollIntoView()", element);
+    }
+
+    private void scrollToBottom() {
+        ((JavascriptExecutor) dv).executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 }

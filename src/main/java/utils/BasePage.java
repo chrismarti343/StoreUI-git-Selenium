@@ -56,4 +56,8 @@ public class BasePage {
         return dv.findElement(locator).getText();
     }
 
+    public void waitForPageLoad() {
+        new WebDriverWait(dv, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("body")));
+    }
+
 }
