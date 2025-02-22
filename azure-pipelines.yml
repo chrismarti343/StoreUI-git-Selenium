@@ -31,5 +31,18 @@ jobs:
       goals: 'test'  # Assuming features.TestRunner executes your tests
       publishJUnitResults: true  # Publish results in this job
 
+  - task: PublishHtmlReport@1
+    displayName: Publish Test Report
+    condition: succeeded()  # Check if previous step succeeded
+    inputs:
+      reportDir: 'report/report.html'
+
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Test Report as Artifact
+    inputs:
+      PathtoPublish: 'D:\a\1\s\report'
+      ArtifactName: 'results'
+      publishLocation: 'Container'
+
 
 
