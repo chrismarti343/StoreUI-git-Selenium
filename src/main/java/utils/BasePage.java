@@ -60,4 +60,6 @@ public class BasePage {
         new WebDriverWait(dv, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("body")));
     }
 
+    //adding some comments
+
 }
