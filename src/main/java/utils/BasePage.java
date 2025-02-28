@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class BasePage {
-
+    private static final int DEFAULT_TIMEOUT = 10;
     protected static ExtentTest test;
     protected final WebDriver dv;
 
@@ -28,11 +28,25 @@ public class BasePage {
     }
 
     public void type(String inputText, By locator) {
-        dv.findElement(locator).sendKeys(inputText);
+
+        try {
+            waitForElementVisible(locator).clear();
+            waitForElementVisible(locator).sendKeys(inputText);
+           
+        } catch (Exception e) {
+            test.fail("Failed to type text: " + e.getMessage());
+            throw e;
+        }
     }
 
     public void click(By locator) {
-        dv.findElement(locator).click();
+
+        try {
+            waitForElementClickable(locator).click();
+        } catch (Exception e) {
+            test.fail("Failed to click element: " + e.getMessage());
+            throw e;
+        }
     }
 
     public void wait(By locator) {
@@ -58,6 +72,16 @@ public class BasePage {
 
     public void waitForPageLoad() {
         new WebDriverWait(dv, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("body")));
+    }
+
+    public WebElement waitForElementVisible(By locator) {
+        WebDriverWait wait = new WebDriverWait(dv, Duration.ofSeconds(DEFAULT_TIMEOUT));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public WebElement waitForElementClickable(By locator) {
+        WebDriverWait wait = new WebDriverWait(dv, Duration.ofSeconds(DEFAULT_TIMEOUT));
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     //adding some comments
