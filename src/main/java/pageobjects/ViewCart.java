@@ -5,7 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import utils.BasePage;
+import base.BasePage;
 
 public class ViewCart extends BasePage {
 

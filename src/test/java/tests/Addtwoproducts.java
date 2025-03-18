@@ -1,8 +1,8 @@
-package test;
+package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utils.BaseTest;
+import base.BaseTest;
 
 public class Addtwoproducts extends BaseTest {
 

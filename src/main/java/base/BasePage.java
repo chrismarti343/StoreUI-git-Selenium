@@ -1,4 +1,4 @@
-package utils;
+package base;
 
 import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
