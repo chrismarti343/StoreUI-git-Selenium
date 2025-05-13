@@ -3,10 +3,9 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.BaseTest;
+import org.openqa.selenium.By;
 
 public class Addtwoproducts extends BaseTest {
-
-
     String firstName = "Guest";
     String lastName = "Checkout";
     String email = "testing@gmail.com";
@@ -33,13 +32,14 @@ public class Addtwoproducts extends BaseTest {
         checkoutpage.clickonCheckout();
         checkoutpage.clickonGuest();
         checkoutpage.clickonContinuar();
-        checkoutpage.setName(firstName);
-        checkoutpage.setLastName(lastName);
-        checkoutpage.setEmail(email);
-        checkoutpage.setPhone(phone);
-        checkoutpage.setAddress(address);
-        checkoutpage.setCity(city);
-        checkoutpage.setPost(postCode);
+
+        String[] personalInfo = {firstName, lastName, email, phone, address, city, postCode};
+        By[] personalInfoFields = {checkoutpage.nameKey, checkoutpage.lastNameGiven, checkoutpage.emailLocator, checkoutpage.phoneLocator, checkoutpage.addressLocator, checkoutpage.cityLocator, checkoutpage.postLocator};
+
+        for (int i = 0; i < personalInfo.length; i++) {
+            checkoutpage.setInfo(personalInfoFields[i], personalInfo[i]);
+        }
+
         checkoutpage.setCountry();
         checkoutpage.setState();
         checkoutpage.clickonNextCheckout();

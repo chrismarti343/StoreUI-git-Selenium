@@ -35,7 +35,7 @@ public class BaseTest {
         test = extent.createTest(nameTest,description);
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
+//        options.addArguments("--headless=new");
         options.addArguments("ignore-certificate-errors");
         options.addArguments("--remote-allow-origins=*");
         dv = new ChromeDriver(options);

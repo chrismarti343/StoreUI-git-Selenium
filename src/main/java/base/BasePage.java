@@ -44,6 +44,7 @@ public class BasePage {
         try {
             waitForElementClickable(locator).click();
         } catch (Exception e) {
+            test.info("Failed to click element: " + locator);
             test.fail("Failed to click element: " + e.getMessage());
             throw e;
         }

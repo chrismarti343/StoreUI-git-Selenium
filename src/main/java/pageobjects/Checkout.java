@@ -16,13 +16,13 @@ public class Checkout extends BasePage {
     By checkout = By.xpath("//a[@class='btn btn-primary']");
     By guest = By.xpath("//input[@value='guest']");
     By next = By.xpath("//input[@id='button-account']");
-    By nameKey = By.id("input-payment-firstname");
-    By lastNameGiven = By.id("input-payment-lastname");
-    By emailLocator = By.id("input-payment-email");
-    By phoneLocator = By.id("input-payment-telephone");
-    By addressLocator = By.id("input-payment-address-1");
-    By cityLocator = By.id("input-payment-city");
-    By postLocator = By.id("input-payment-postcode");
+    public By nameKey = By.id("input-payment-firstname");
+    public By lastNameGiven = By.id("input-payment-lastname");
+    public By emailLocator = By.id("input-payment-email");
+    public By phoneLocator = By.id("input-payment-telephone");
+    public By addressLocator = By.id("input-payment-address-1");
+    public By cityLocator = By.id("input-payment-city");
+    public By postLocator = By.id("input-payment-postcode");
     By clickCountry = By.id("input-payment-country");
     By selectAny = By.xpath("//option[@value='62']");
     By clickZone = By.id("input-payment-zone");
@@ -52,42 +52,16 @@ public class Checkout extends BasePage {
         click(next);
         implicitWait(1);
         test.log(Status.PASS, "Click on Next ");
+
     }
-    public void setName(String name) {
-        type(name,nameKey);
+
+    public void setInfo(By locator, String value) {
+        type(value, locator);
         implicitWait(1);
-        test.log(Status.PASS, "Add name ");
+        test.log(Status.PASS, "Add info");
+
     }
-    public void setLastName(String lastName) {
-        type(lastName,lastNameGiven);
-        implicitWait(1);
-        test.log(Status.PASS, "Add lastname");
-    }
-    public void setEmail(String email) {
-        type(email,emailLocator);
-        implicitWait(1);
-        test.log(Status.PASS, "Add email");
-    }
-    public void setPhone(String phone) {
-        type(phone,phoneLocator);
-        implicitWait(1);
-        test.log(Status.PASS,"Add phone");
-    }
-    public void setAddress(String address) {
-        type(address,addressLocator);
-        implicitWait(1);
-        test.log(Status.PASS, "Add address ");
-    }
-    public void setCity(String city) {
-        type(city,cityLocator);
-        implicitWait(1);
-        test.log(Status.PASS, "Add city ");
-    }
-    public void setPost(String postCode) {
-        type(postCode,postLocator);
-        implicitWait(1);
-        test.log(Status.PASS, "Add Zip Code");
-    }
+
     public void setCountry() {
         click(clickCountry);
         implicitWait(1);
